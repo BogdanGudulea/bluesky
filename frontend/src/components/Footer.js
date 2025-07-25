@@ -108,19 +108,19 @@ const Footer = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-sm text-gray-400">
                   <span className="mr-3">📧</span>
-                  <a href="mailto:hello@blueskyagency.com" className="hover:text-electric-purple transition-colors">
-                    hello@blueskyagency.com
+                  <a href="mailto:bogdan.gudulea@gmail.com" className="hover:text-electric-purple transition-colors">
+                    bogdan.gudulea@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center text-sm text-gray-400">
                   <span className="mr-3">📞</span>
-                  <a href="tel:+15551234567" className="hover:text-electric-purple transition-colors">
-                    +1 (555) 123-4567
+                  <a href="tel:+40729168833" className="hover:text-electric-purple transition-colors">
+                    (+40) 729 168 833
                   </a>
                 </div>
                 <div className="flex items-center text-sm text-gray-400">
-                  <span className="mr-3">📍</span>
-                  <span>San Francisco, CA</span>
+                  <span className="mr-3">👨‍💼</span>
+                  <span>Led by 20+ years QA veteran</span>
                 </div>
               </div>
 
