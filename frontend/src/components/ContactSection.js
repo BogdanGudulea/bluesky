@@ -229,11 +229,11 @@ const ContactSection = () => {
               <div className="mt-8 pt-8 border-t border-dark-border">
                 <p className="text-gray-400 text-sm mb-4">Or reach out directly:</p>
                 <div className="flex flex-wrap gap-4">
-                  <a href="mailto:hello@blueskyagency.com" className="text-electric-purple hover:text-teal transition-colors text-sm">
-                    📧 hello@blueskyagency.com
+                  <a href="mailto:bogdan.gudulea@gmail.com" className="text-electric-purple hover:text-teal transition-colors text-sm">
+                    📧 bogdan.gudulea@gmail.com
                   </a>
-                  <a href="tel:+15551234567" className="text-electric-purple hover:text-teal transition-colors text-sm">
-                    📞 +1 (555) 123-4567
+                  <a href="tel:+40729168833" className="text-electric-purple hover:text-teal transition-colors text-sm">
+                    📞 (+40) 729 168 833
                   </a>
                 </div>
               </div>
