@@ -49,14 +49,14 @@ const ContactSection = () => {
     {
       icon: '📧',
       title: 'Email Us',
-      details: 'hello@blueskyagency.com',
+      details: 'bogdan.gudulea@gmail.com',
       description: 'Send us an email anytime',
       color: 'electric-purple'
     },
     {
       icon: '📞',
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
+      details: '(+40) 729 168 833',
       description: 'Mon-Fri from 8am to 6pm',
       color: 'teal'
     },
@@ -66,13 +66,6 @@ const ContactSection = () => {
       details: 'Available 24/7',
       description: 'Get instant support',
       color: 'coral'
-    },
-    {
-      icon: '📍',
-      title: 'Visit Us',
-      details: 'San Francisco, CA',
-      description: 'Schedule an appointment',
-      color: 'electric-purple'
     }
   ];
 
