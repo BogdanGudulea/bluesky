@@ -92,10 +92,10 @@ const ServicesSection = () => {
 
         {/* Service Tabs */}
         <div className="flex justify-center mb-12">
-          <div className="bg-dark-card rounded-full p-2 border border-dark-border">
+          <div className="bg-dark-card rounded-full p-2 border border-dark-border relative z-20">
             <button
               onClick={() => setActiveTab('qa')}
-              className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
+              className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 relative z-30 ${
                 activeTab === 'qa'
                   ? 'bg-gradient-to-r from-electric-purple to-teal text-white shadow-lg'
                   : 'text-gray-400 hover:text-white'
@@ -105,7 +105,7 @@ const ServicesSection = () => {
             </button>
             <button
               onClick={() => setActiveTab('marketing')}
-              className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
+              className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 relative z-30 ${
                 activeTab === 'marketing'
                   ? 'bg-gradient-to-r from-electric-purple to-teal text-white shadow-lg'
                   : 'text-gray-400 hover:text-white'
