@@ -280,17 +280,20 @@ class BackendTester:
     def test_cors_headers(self):
         """Test CORS headers"""
         try:
-            response = requests.options(f"{self.base_url}/api/health", timeout=10)
-            cors_headers = {
-                "Access-Control-Allow-Origin": response.headers.get("Access-Control-Allow-Origin"),
-                "Access-Control-Allow-Methods": response.headers.get("Access-Control-Allow-Methods"),
-                "Access-Control-Allow-Headers": response.headers.get("Access-Control-Allow-Headers")
+            # Test with proper CORS preflight request
+            headers = {
+                "Origin": "http://localhost:3000",
+                "Access-Control-Request-Method": "GET"
             }
+            response = requests.options(f"{self.base_url}/api/health", headers=headers, timeout=10)
             
-            if cors_headers["Access-Control-Allow-Origin"]:
-                self.log_test("CORS Configuration", "PASS", f"CORS headers present: {cors_headers}")
+            cors_origin = response.headers.get("access-control-allow-origin")
+            cors_methods = response.headers.get("access-control-allow-methods")
+            
+            if cors_origin and cors_methods:
+                self.log_test("CORS Configuration", "PASS", f"CORS working - Origin: {cors_origin}, Methods: {cors_methods}")
             else:
-                self.log_test("CORS Configuration", "FAIL", "CORS headers missing")
+                self.log_test("CORS Configuration", "FAIL", "CORS headers missing in preflight response")
         except Exception as e:
             self.log_test("CORS Configuration", "FAIL", f"Connection error: {str(e)}")
     
