@@ -87,7 +87,7 @@ const HeroSection = () => {
             >
               From cutting-edge <span className="text-teal font-semibold">quality assurance</span> to 
               revolutionary <span className="text-coral font-semibold">marketing strategies</span> - 
-              we craft digital experiences that dominate markets.
+              we craft digital experiences that dominate markets. Led by a <span className="text-electric-purple font-semibold">veteran manual tester with 20+ years of experience</span>.
             </motion.p>
 
             <motion.div 
